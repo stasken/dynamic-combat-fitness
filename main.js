@@ -43,6 +43,7 @@ function getNextClass() {
 }
 
 function updateCountdown() {
+  console.log("xx")
   const next = getNextClass();
   const timerEl = document.getElementById('countdownTimer');
   const nameEl = document.getElementById('nextClassName');
@@ -60,4 +61,4 @@ function updateCountdown() {
   timerEl.textContent = hrs > 0 ? `${hrs}h ${mins}m` : `${mins}m`;
 }
 
-updateCountdown
+updateCountdown()
