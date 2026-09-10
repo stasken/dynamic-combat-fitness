@@ -21,10 +21,9 @@
   <header class="nav">
     <div class="container">
       <a href="#top" class="nav-logo" aria-label="Dynamic Combat & Fitness home">
-        <img src="assets/dynamic-logo-small-upscaled4x.jpg" alt="Dynamic Combat & Fitness logo">
+        <img src="assets/logos/dynamic-logo-small-upscaled4x-transparant.png" alt="Dynamic Combat & Fitness logo">
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="#training">Training</a>
         <a href="#schedule">Schedule</a>
         <a href="#location">Location</a>
         <a href="#community">Community</a>
@@ -62,13 +61,13 @@
     <div class="container">
       <div class="hero-grid">
         <div>
-          <div class="eyebrow">Boxing / Muay Thai / BJJ / Strength</div>
+          <div class="eyebrow">Boxing / Muay Thai / BJJ / Strength / Conditioning</div>
           <h1>Train like your <span class="accent">next fight</span> is tomorrow</h1>
           <p class="lede">One gym, every weapon you need. Real coaching for people who've never thrown a punch, and for
             fighters chasing their next belt. No mirrors. No shortcuts. Just work.</p>
           <div class="hero-ctas">
             <a href="#membership" class="btn btn-primary">Join the Club</a>
-            <a href="#app" class="btn btn-outline">Download the App</a>
+            <button onclick="openApp()" class="btn btn-outline">Download the App</button>
           </div>
           <div class="countdown">
             <span class="dot"></span>
@@ -85,8 +84,9 @@
             <path d="M60 130 L100 40 L140 130 L100 108 Z" stroke="#f3f3f0" stroke-width="1.5" fill="none"
               opacity="0.6" />
           </svg> -->
-          <video autoplay muted loop playsinline poster="assets/dynamic-uren.jpeg" aria-label="Training footage loop">
-            <source src="assets/proefles-video.mp4" type="video/mp4"> Your browser doesn't support embedded video.
+          <video autoplay muted loop playsinline aria-label="Training footage loop">
+            <source src="./assets/videos/proefles-video-correct.mp4" type="video/mp4"> Your browser doesn't support
+            embedded video.
           </video>
           <div class="caption">DYNAMIC COMBAT & FITNESS — FLOOR CAM 01</div>
         </div>
@@ -106,7 +106,7 @@
           <div class="eyebrow">Weekly schedule</div>
           <h2>No excuses.<br>Just time slots.</h2>
         </div>
-        <p class="lede">Classes run four days a week. Every session is coach-led — walk in, we'll
+        <p class="lede">Momentarily 4 trainings a week.<br />Every session is coach-led.<br />Walk in, we'll
           get you moving.</p>
       </div>
 
@@ -123,25 +123,25 @@
           <tr data-day="1" data-start="19:00">
             <td>Monday</td>
             <td class="time">19:00 – 21:00</td>
-            <td><span class="class-tag tag-bjj">Combat Conditioning</span></td>
+            <td><span class="class-tag tag-boxing">MMA class</span></td>
           </tr>
 
           <tr data-day="4" data-start="20:00">
             <td>Thursday</td>
             <td class="time">20:00 – 22:00</td>
-            <td><span class="class-tag tag-boxing">Mixed Combat Training</span></td>
+            <td><span class="class-tag tag-boxing">MMA class</span></td>
           </tr>
 
           <tr data-day="5" data-start="20:00">
             <td>Friday</td>
             <td class="time">20:00 – 22:00</td>
-            <td><span class="class-tag tag-muaythai">Combat Conditioning</span></td>
+            <td><span class="class-tag tag-boxing">MMA class</span></td>
           </tr>
 
           <tr data-day="6" data-start="17:00">
             <td>Saturday</td>
             <td class="time">17:00 – 19:00</td>
-            <td><span class="class-tag tag-strength">Mixed Combat Training</span></td>
+            <td><span class="class-tag tag-boxing">MMA class</span></td>
           </tr>
 
         </tbody>
@@ -163,24 +163,27 @@
       <h2 style="margin-bottom:48px;">The floor is<br>waiting.</h2>
 
       <div class="location-grid">
-        <div class="location-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.1087633796737!2d3.735319177119962!3d51.0695422717169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3712daffcf129%3A0x50c87a0841068a43!2sAfrikalaan%20157%2C%209000%20Gent!5e0!3m2!1snl!2sbe!4v1786457726229!5m2!1snl!2sbe"
-            loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
-            title="Dynamic Combat & Fitness location map">
-          </iframe>
+        <div class="first-time">
+          <h4>How to enter the building</h4>
+          <div class="location-video">
+            <video autoplay muted loop playsinline controls>
+              <source src="./assets/videos/locatie.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
+
         <div class="location-info">
           <div class="addr">Afrikalaan 157</div>
-          <div class="addr-sub">Look for the small door</div>
 
-          <div class="first-time">
-            <h4>First time? Here's how to enter the building</h4>
-            <ol>
-              <li>Park up front or street next door or go by bus.</li>
-              <li>Look for gray door.</li>
-              <li>Come in.</li>
-            </ol>
+
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.1087633796737!2d3.735319177119962!3d51.0695422717169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3712daffcf129%3A0x50c87a0841068a43!2sAfrikalaan%20157%2C%209000%20Gent!5e0!3m2!1snl!2sbe!4v1786457726229!5m2!1snl!2sbe"
+              loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+              title="Dynamic Combat & Fitness location map">
+            </iframe>
+
           </div>
         </div>
       </div>
@@ -198,11 +201,12 @@
       <div class="social-grid">
         <div>
           <div class="testimonial-card">
-            <p>"I walked in unable to do a single round on the bag. Eight months later I'm sparring twice a week. Nobody
-              here made me feel small for starting late."</p>
-            <div class="who">Maya R. <span>— Member since 2025</span></div>
+            <p>"I’d never thrown a punch and my conditioning was average, so I was nervous starting MMA. But the coaches
+              and fighters made me feel comfortable from the moment I walked in. They pushed me, let me rest when I
+              needed it, and that first training turned my shame into confidence"</p>
+            <div class="who">Arno<span> — Zero experience - Member since september 2025</span></div>
           </div>
-          <div class="testimonial-card">
+          <!-- <div class="testimonial-card">
             <p>"The coaching is technical, not just tough. I've trained at three other gyms — this is the first place
               that actually fixed my footwork."</p>
             <div class="who">Devon K. <span>— Amateur boxer</span></div>
@@ -211,7 +215,7 @@
             <p>"Community over ego. That's rare in combat gyms. Everyone from white belts to purple belts rolls together
               here."</p>
             <div class="who">Sam O. <span>— BJJ, blue belt</span></div>
-          </div>
+          </div> -->
         </div>
 
         <div>
@@ -248,7 +252,8 @@
           <h2>Pick your weapon.</h2>
         </div>
         <p class="lede">
-          Simple pricing. No contracts. Every plan requires a yearly €40 insurance & administration fee.
+          Simple pricing. No contracts.<br />
+          <span class="administration-fee">Every plan requires a yearly €40 insurance & administration fee.</span>
         </p>
       </div>
 
@@ -276,7 +281,7 @@
             <ul>
               <li>Access for one full day</li>
               <li>Join any session</li>
-              <li>No membership required</li>
+              <li>Book at least 1 hour in advance!</li>
             </ul>
             <a href="#app" class="btn btn-outline">Start in the App</a>
           </div>
@@ -289,8 +294,9 @@
             <div class="desc">Flexible training without a monthly plan.</div>
             <ul>
               <li>10 training sessions</li>
-              <li>Valid for all classes</li>
-              <li>Use anytime</li>
+              <!-- <li>Valid for all classes</li> -->
+              <li>Valid for 6 months</li>
+              <li>Book at least 1 hour in advance!</li>
             </ul>
             <a href="#app" class="btn btn-primary">Start in the App</a>
           </div>
@@ -307,8 +313,9 @@
             <div class="desc">Unlimited access to every class.</div>
             <ul>
               <li>Unlimited training</li>
-              <li>All disciplines included</li>
-              <li>Open mat access</li>
+              <!-- <li>All disciplines included</li> -->
+              <!-- <li>Book at least 1 hour in advance!</li> -->
+              <!-- <li>Open mat access</li> -->
             </ul>
             <a href="#app" class="btn btn-outline">Start in the App</a>
           </div>
@@ -320,8 +327,9 @@
             <div class="desc">Train without limits for a full season.</div>
             <ul>
               <li>Unlimited training</li>
-              <li>All disciplines included</li>
-              <li>Open mat access</li>
+              <!-- <li>All disciplines included</li> -->
+              <!-- <li>Book at least 1 hour in advance!</li> -->
+              <!-- <li>Open mat access</li> -->
             </ul>
             <a href="#app" class="btn btn-outline">Start in the App</a>
           </div>
@@ -334,8 +342,9 @@
             <div class="desc">Half‑year commitment, full‑time results.</div>
             <ul>
               <li>Unlimited training</li>
-              <li>All disciplines included</li>
-              <li>Open mat access</li>
+              <!-- <li>All disciplines included</li> -->
+              <!-- <li>Book at least 1 hour in advance!</li> -->
+              <!-- <li>Open mat access</li> -->
             </ul>
             <a href="#app" class="btn btn-primary">Start in the App</a>
           </div>
@@ -347,8 +356,9 @@
             <div class="desc">The best value for dedicated fighters.</div>
             <ul>
               <li>Unlimited training</li>
-              <li>All disciplines included</li>
-              <li>Open mat access</li>
+              <!-- <li>All disciplines included</li> -->
+              <!-- <li>Book at least 1 hour in advance!</li> -->
+              <!-- <li>Open mat access</li> -->
             </ul>
             <a href="#app" class="btn btn-outline">Start in the App</a>
           </div>
@@ -364,7 +374,7 @@
      ============================================================ -->
   <section class="section" id="motivation">
     <div class="container">
-      <div class="eyebrow">No shortcuts</div>
+      <!-- <div class="eyebrow">No shortcuts</div>
       <h2 style="margin-bottom:44px;">Words we train by.</h2>
 
       <div class="quote-rotator">
@@ -382,26 +392,62 @@
         <div class="clip"><span class="play">▶</span><span class="label">REPLACE: clip_sparring.mp4</span></div>
         <div class="clip"><span class="play">▶</span><span class="label">REPLACE: clip_roll.mp4</span></div>
         <div class="clip"><span class="play">▶</span><span class="label">REPLACE: clip_strength.mp4</span></div>
-      </div>
+      </div> -->
 
       <div id="coaches">
         <div class="coaches-head">
           <div class="eyebrow">The coaches</div>
           <h3 style="font-size:clamp(22px,3vw,30px);">Meet the people who'll push you.</h3>
         </div>
+
         <div class="coaches-grid">
+
+          <!-- LAURENT -->
           <div class="coach-card">
-            <div class="photo"><img src="assets/laurent-coach2.png" alt="Coach Laurent"></div>
+            <div class="photo"><img src="assets/coaches/laurent-coach2.png" alt="Coach Laurent"></div>
             <h4>Laurent</h4>
-            <div class="disc">Muay Thai · Head Coach</div>
+            <h4>Co-founder & head coach</h4>
+            <div class="disc">Muay Thai · MMA · BJJ · Strength & Conditioning</div>
+
+            <button class="bio-toggle" data-target="bio-laurent">Read bio</button>
+
+            <div class="coach-bio" id="bio-laurent">
+              <p>With over 20 years of martial arts experience, Laurent has an extensive background in Shotokan Karate,
+                Muay Thai, MMA and Brazilian Jiu-Jitsu.</p>
+              <p>As an EREPS Level 4 qualified trainer, he specializes in Strength & Conditioning and athlete
+                development, coaching both recreational and competitive athletes. His approach combines technical combat
+                sports coaching with physical preparation, padwork and fight strategy.</p>
+              <p>Laurent has also been closely involved in preparing competitive fighters, including Cisco’s Strength &
+                Conditioning, padwork and tactical preparation for Cage Warriors.</p>
+              <p>His coaching focuses on technical detail, intelligent training and individual progression, helping
+                athletes become stronger, more skilled and more complete.</p>
+            </div>
           </div>
+
+          <!-- CISCO -->
           <div class="coach-card">
-            <div class="photo"><img src="assets/cisko-coach.png" alt="Coach Cisko"></div>
-            <h4>Cisko</h4>
-            <div class="disc">Muay Thai · Head Coach</div>
+            <div class="photo"><img src="assets/coaches/cisko-coach.png" alt="Coach Cisko"></div>
+            <h4>Francisco</h4>
+            <h4>Co-founder & head coach</h4>
+            <div class="disc">Muay Thai · MMA · BJJ · Wrestling</div>
+
+            <button class="bio-toggle" data-target="bio-cisco">Read bio</button>
+
+            <div class="coach-bio" id="bio-cisco">
+              <p>Cisco is an experienced combat athlete and coach with a strong background in MMA, Muay Thai, Brazilian
+                Jiu-Jitsu and wrestling.</p>
+              <p>He became Klong Dao Stadium Champion in Koh Lanta, Thailand in 2025, winning by second-round knockout,
+                and TGCC Open Jiu-Jitsu Champion in 2024.</p>
+              <p>Cisco has competed multiple times in Cage Warriors Lowlands, recording three first-round knockouts, and
+                has also competed in Versus.</p>
+              <p>He brings his real competition experience directly into his coaching, with a strong focus on effective
+                technique, wrestling, fight strategy and performance under pressure.</p>
+            </div>
           </div>
+
         </div>
       </div>
+
     </div>
   </section>
 
@@ -412,19 +458,20 @@
     <div class="container">
       <div class="footer-cta">
         <h3>Ready to step in?</h3>
-        <a href="#" class="btn btn-primary">Download the App</a>
+        <button onclick="openApp()" class="btn btn-primary">Download the App</button>
+        <!-- <a href="#" class="btn btn-primary">Download the App</a> -->
       </div>
 
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="assets/dynamic-logo.jpeg" alt="Dynamic Combat & Fitness logo">
-          <p>Combat sports and strength training for beginners and fighters. Discipline, community, transformation.</p>
+          <img src="./assets/logos/dynamic-logo-small-upscaled4x-transparant.png" alt="Dynamic Combat & Fitness logo">
+          <!-- <p>Combat sports and strength training for beginners and fighters. Discipline, community, transformation.</p> -->
         </div>
         <div class="footer-col">
           <h5>Contact</h5>
           <ul>
-            <li><a href="mailto:train@dynamiccombatfitness.com">info@dynamiccombatfitness.be</a></li>
-            <li><a href="tel:+32468686868">+32468686868</a></li>
+            <li><a href="mailto:dynamic.combat.fitness1@gmail.com">dynamic.combat.fitness1@gmail.com</a></li>
+            <li><a href="tel:+32479505854">+32479505854</a></li>
             <li><a href="#location">Afrikalaan 157, 9000 Gent</a></li>
           </ul>
         </div>
@@ -439,9 +486,10 @@
         <div class="footer-col">
           <h5>Follow</h5>
           <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">TikTok</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><a href="https://www.instagram.com/dynamic_combat_fitness/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@dynamic_combat_fitness" target="_blank">TikTok</a></li>
+            <li><a href="https://www.facebook.com/p/Dynamic-Combat-Fitness-61576883922564/" target="_blank">Facebook</a>
+            </li>
           </ul>
         </div>
       </div>

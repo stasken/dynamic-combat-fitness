@@ -740,10 +740,40 @@ p {
 .first-time h4 {
   font-family: var(--font-mono);
   font-size: 13px;
+  text-align: center;
   letter-spacing: .08em;
   text-transform: uppercase;
   color: var(--cyan);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+/* Video container */
+.location-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  max-height: 600px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(160deg, rgba(63, 224, 255, .10), transparent 50%),
+    var(--panel);
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 12px 14px;
+}
+
+/* Video element */
+.location-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.92) contrast(1.05);
+}
+
+/* Optional: subtle glow on hover */
+.location-video:hover {
+  box-shadow: 0 0 30px rgba(63, 224, 255, .25);
 }
 
 .first-time ol {
@@ -1110,8 +1140,8 @@ p {
 
 .coaches-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 62px;
 }
 
 @media (max-width:860px) {
@@ -1127,6 +1157,7 @@ p {
   margin-bottom: 14px;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 14px 100%);
+  max-width: 350px;
 }
 
 .coach-card .photo img {
@@ -1153,6 +1184,46 @@ p {
   text-transform: uppercase;
 }
 
+/* BIO TOGGLE BUTTON */
+.bio-toggle {
+  margin-top: 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--cyan);
+  background: transparent;
+  border: 1px solid var(--cyan);
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.bio-toggle:hover {
+  background: rgba(63, 224, 255, .08);
+  border-color: var(--line);
+}
+
+/* BIO PANEL */
+.coach-bio {
+  margin-top: 18px;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--line);
+  display: none;
+}
+
+.coach-bio p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.coach-bio.open {
+  display: block;
+}
+
+
 /* ============ FOOTER ============ */
 .footer {
   background: var(--bg-alt);
@@ -1174,8 +1245,8 @@ p {
 }
 
 .footer-brand img {
-  height: 40px;
-  margin-bottom: 16px;
+  /* height: 40px; */
+  /* margin-bottom: 16px; */
 }
 
 .footer-brand p {
@@ -1254,4 +1325,58 @@ p {
 
 .section-head .lede {
   margin-bottom: 0;
+}
+
+.section-head .administration-fee {
+  /* color: var(--text-muted); */
+  /* animation: pulseColor 2.2s ease-in-out infinite; */
+  color: #eee;
+  animation: neonPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulseColor {
+  0% {
+    color: var(--text-muted);
+  }
+
+  50% {
+    color: #ffffff;
+  }
+
+  100% {
+    color: var(--text-muted);
+  }
+}
+
+.administration-fee {
+  color: var(--cyan);
+  /* or any neon color you prefer */
+  animation: neonPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+  0% {
+    text-shadow:
+      0 0 2px var(--cyan),
+      0 0 6px var(--cyan),
+      0 0 12px var(--cyan);
+    opacity: 0.85;
+  }
+
+  50% {
+    text-shadow:
+      0 0 4px #ffffff,
+      0 0 12px #ffffff,
+      0 0 24px var(--cyan),
+      0 0 48px var(--cyan);
+    opacity: 1;
+  }
+
+  100% {
+    text-shadow:
+      0 0 2px var(--cyan),
+      0 0 6px var(--cyan),
+      0 0 12px var(--cyan);
+    opacity: 0.85;
+  }
 }
