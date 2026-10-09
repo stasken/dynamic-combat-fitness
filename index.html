@@ -61,7 +61,7 @@
     <div class="container">
       <div class="hero-grid">
         <div>
-          <div class="eyebrow">Boxing / Muay Thai / BJJ / Strength / Conditioning</div>
+          <div class="eyebrow">MMA / Muay Thai / BJJ / Strength / Conditioning</div>
           <h1>Train like your <span class="accent">next fight</span> is tomorrow</h1>
           <p class="lede">One gym, every weapon you need. Real coaching for people who've never thrown a punch, and for
             fighters chasing their next belt. No mirrors. No shortcuts. Just work.</p>
@@ -135,13 +135,19 @@
           <tr data-day="5" data-start="20:00">
             <td>Friday</td>
             <td class="time">20:00 – 22:00</td>
-            <td><span class="class-tag tag-boxing">MMA class</span></td>
+            <td><span class="class-tag tag-muaythai">Muay Thai</span></td>
+          </tr>
+
+          <tr data-day="6" data-start="17:00">
+            <td>Saturday</td>
+            <td class="time">15:00 – 17:00</td>
+            <td><span class="class-tag tag-women">Women only</span></td>
           </tr>
 
           <tr data-day="6" data-start="17:00">
             <td>Saturday</td>
             <td class="time">17:00 – 19:00</td>
-            <td><span class="class-tag tag-boxing">MMA class</span></td>
+            <td><span class="class-tag tag-grappling">Grappling</span></td>
           </tr>
 
         </tbody>
@@ -199,14 +205,14 @@
       <h2 style="margin-bottom:48px;">Proof, not promises.</h2>
 
       <div class="social-grid">
-        <div>
+        <!-- <div>
           <div class="testimonial-card">
             <p>"I’d never thrown a punch and my conditioning was average, so I was nervous starting MMA. But the coaches
               and fighters made me feel comfortable from the moment I walked in. They pushed me, let me rest when I
               needed it, and that first training turned my shame into confidence"</p>
             <div class="who">Arno<span> — Zero experience - Member since september 2025</span></div>
           </div>
-          <!-- <div class="testimonial-card">
+          <div class="testimonial-card">
             <p>"The coaching is technical, not just tough. I've trained at three other gyms — this is the first place
               that actually fixed my footwork."</p>
             <div class="who">Devon K. <span>— Amateur boxer</span></div>
@@ -215,22 +221,24 @@
             <p>"Community over ego. That's rare in combat gyms. Everyone from white belts to purple belts rolls together
               here."</p>
             <div class="who">Sam O. <span>— BJJ, blue belt</span></div>
-          </div> -->
-        </div>
+          </div>
+        </div> -->
 
         <div>
           <div class="insta-head">
             <h3 style="font-size:16px;">@dynamic_combat_fitness</h3>
             <span class="handle">2K followers</span>
           </div>
-          <div class="insta-grid">
+          <!-- <div class="insta-grid">
             <div class="insta-item"></div>
             <div class="insta-item"></div>
             <div class="insta-item"></div>
             <div class="insta-item"></div>
             <div class="insta-item"></div>
             <div class="insta-item"></div>
-          </div>
+          </div> -->
+          <behold-widget feed-id="3dMbMMvoXeD26R2gePhJ"></behold-widget>
+
           <div style="margin-top:24px;">
             <a href="https://www.instagram.com/dynamic_combat_fitness/" target="_blank" class="btn btn-outline"
               style="width:100%;">Follow Us on Instagram</a>
@@ -270,7 +278,7 @@
               <li>No commitment</li>
               <li>Try any training day</li>
             </ul>
-            <a href="#app" class="btn btn-outline">Start in the App</a>
+            <a href="https://zcal.co/dynamic" target="_blank" class="btn btn-outline">Book your free session</a>
           </div>
 
           <!-- DAY PASS -->
@@ -283,7 +291,8 @@
               <li>Join any session</li>
               <li>Book at least 1 hour in advance!</li>
             </ul>
-            <a href="#app" class="btn btn-outline">Start in the App</a>
+            <!-- <a href="#app" class="btn btn-outline">Start in the App</a> -->
+            <button onclick="openApp()" class="btn btn-outline">Start in the App</button>
           </div>
 
           <!-- 10 SESSION PASS -->
@@ -298,7 +307,7 @@
               <li>Valid for 6 months</li>
               <li>Book at least 1 hour in advance!</li>
             </ul>
-            <a href="#app" class="btn btn-primary">Start in the App</a>
+            <button onclick="openApp()" class="btn btn-outline">Start in the App</button>
           </div>
         </div>
       </div>
@@ -331,7 +340,7 @@
               <!-- <li>Book at least 1 hour in advance!</li> -->
               <!-- <li>Open mat access</li> -->
             </ul>
-            <a href="#app" class="btn btn-outline">Start in the App</a>
+            <button onclick="openApp()" class="btn btn-outline">Start in the App</button>
           </div>
 
           <!-- 6 MONTH -->
@@ -346,7 +355,7 @@
               <!-- <li>Book at least 1 hour in advance!</li> -->
               <!-- <li>Open mat access</li> -->
             </ul>
-            <a href="#app" class="btn btn-primary">Start in the App</a>
+            <button onclick="openApp()" class="btn btn-outline">Start in the App</button>
           </div>
 
           <!-- 12 MONTH -->
@@ -360,7 +369,7 @@
               <!-- <li>Book at least 1 hour in advance!</li> -->
               <!-- <li>Open mat access</li> -->
             </ul>
-            <a href="#app" class="btn btn-outline">Start in the App</a>
+            <button onclick="openApp()" class="btn btn-outline">Start in the App</button>
           </div>
         </div>
       </div>
@@ -404,7 +413,7 @@
 
           <!-- LAURENT -->
           <div class="coach-card">
-            <div class="photo"><img src="assets/coaches/laurent-coach2.png" alt="Coach Laurent"></div>
+            <div class="photo"><img src="assets/coaches/laurent.jpeg" alt="Coach Laurent"></div>
             <h4>Laurent</h4>
             <h4>Co-founder & head coach</h4>
             <div class="disc">Muay Thai · MMA · BJJ · Strength & Conditioning</div>
@@ -426,7 +435,7 @@
 
           <!-- CISCO -->
           <div class="coach-card">
-            <div class="photo"><img src="assets/coaches/cisko-coach.png" alt="Coach Cisko"></div>
+            <div class="photo"><img src="assets/coaches/cisko.jpeg" alt="Coach Cisko"></div>
             <h4>Francisco</h4>
             <h4>Co-founder & head coach</h4>
             <div class="disc">Muay Thai · MMA · BJJ · Wrestling</div>
@@ -501,7 +510,13 @@
     </div>
   </footer>
   <script src="main.js"></script>
-
+  <script>
+    (() => {
+      if (window.__bhldScript) return; window.__bhldScript = true;
+      const d = document, s = d.createElement("script"); s.type = "module";
+      s.src = "https://w.behold.so/widget.js"; setTimeout(() => { d.head.append(s); }, 0);
+    })();
+  </script>
 </body>
 
 </html>

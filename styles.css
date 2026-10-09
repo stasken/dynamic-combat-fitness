@@ -597,7 +597,7 @@ p {
   color: var(--green);
 }
 
-.tag-muaythai {
+.tag-grappling {
   color: var(--cyan);
 }
 
@@ -605,8 +605,12 @@ p {
   color: #ff9f4d;
 }
 
-.tag-strength {
+.tag-muaythai {
   color: #c9c9cf;
+}
+
+.tag-women {
+  color: #f54daf;
 }
 
 .schedule-table .time {
@@ -628,8 +632,9 @@ p {
   }
 
   .schedule-table tr {
-    padding: 14px 0;
+    padding: 14px;
     border-bottom: 1px solid var(--line);
+    text-align: center;
   }
 
   .schedule-table td {
