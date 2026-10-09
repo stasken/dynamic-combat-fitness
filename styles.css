@@ -814,7 +814,7 @@ p {
 /* ============ SOCIAL PROOF ============ */
 .social-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.2fr 2fr;
   gap: 56px;
   align-items: start;
 }
@@ -822,6 +822,14 @@ p {
 @media (max-width:900px) {
   .social-grid {
     grid-template-columns: 1fr;
+  }
+
+  .location-video {
+    margin: 0px;
+  }
+
+  .location-info {
+    padding: 52px 4px;
   }
 }
 
@@ -1139,39 +1147,18 @@ p {
   color: var(--text-muted);
 }
 
+/* =========================================
+   SECTION HEADER
+========================================= */
+
 .coaches-head {
   margin-bottom: 36px;
 }
 
 .coaches-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 62px;
-}
-
-@media (max-width:860px) {
-  .coaches-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.coach-card .photo {
-  aspect-ratio: 3/4;
-  background: linear-gradient(150deg, #1a1a1f, #0c0c0e);
-  border: 1px solid var(--line);
-  margin-bottom: 14px;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 14px 100%);
-  max-width: 350px;
-}
-
-.coach-card .photo img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .coach-card h4 {
@@ -1185,8 +1172,57 @@ p {
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--cyan);
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.coach-card .photo {
+  position: relative;
+  aspect-ratio: 3 / 4;
+
+  max-width: 350px;
+  margin-bottom: 14px;
+
+  background: linear-gradient(150deg, #1a1a1f, #0c0c0e);
+  border: 1px solid var(--line);
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 14px 100%);
+}
+
+.coach-card .photo img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+@media (max-width: 860px) {
+  .coaches-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .coaches-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coach-card {
+    text-align: center;
+  }
+
+  .coach-card .photo {
+    width: 100%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* BIO TOGGLE BUTTON */
